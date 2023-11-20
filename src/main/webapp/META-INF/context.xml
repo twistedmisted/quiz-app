@@ -9,7 +9,7 @@
 
             driverClassName="com.intersystems.jdbc.IRISDriver"
             username="_SYSTEM" password="PASSWORD"
-            url="jdbc:IRIS://localhost:9091/User"
+            url="jdbc:IRIS://my-iris:1972/User"
     />
 
 </Context>
