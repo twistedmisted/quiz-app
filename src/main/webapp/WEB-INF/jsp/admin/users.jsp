@@ -7,6 +7,13 @@
     <head>
         <title><fmt:message key="list-users"/></title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <style>
+            .navbar-nav .dropdown-menu {
+                right: 0;
+                left: auto;
+            }
+        </style>
     </head>
     <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,12 +35,18 @@
                     <a class="nav-link font-weight-bold" href="${pageContext.request.contextPath}/app/logout"><fmt:message key="log-out"/></a>
                 </li>
             </ul>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}?lang=en"><fmt:message key="language.en"/></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="${pageContext.request.contextPath}?lang=ua"><fmt:message key="language.ua"/></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <fmt:message key="language"/>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                        <a class="dropdown-item" href="${pageContext.request.contextPath}?lang=en"><fmt:message
+                                key="language.en"/></a>
+                        <a class="dropdown-item" href="${pageContext.request.contextPath}?lang=ua"><fmt:message
+                                key="language.ua"/></a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -123,6 +136,8 @@
             </ul>
         </nav>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </body>
     </html>
