@@ -17,8 +17,8 @@ services:
     container_name: quiz-app
     depends_on:
       - iris
-    image: tomcat:10
-    volumes:
-      - ./target/main_project-1.0-SNAPSHOT.war:/usr/local/tomcat/webapps/ROOT.war
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - '8080:8080'
