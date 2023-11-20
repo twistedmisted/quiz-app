@@ -34,3 +34,6 @@ Tests can be sort by subject, name, difficulty, number of questions. Each quiz h
    ```
 3.  Open http://localhost:8080/
 4. Everything done
+
+# Video Demo
+[Watch video](/demo/video_demo.mp4)
