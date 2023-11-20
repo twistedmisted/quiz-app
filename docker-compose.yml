@@ -1,0 +1,23 @@
+version: '3.6'
+services:
+  iris:
+    container_name: my-iris
+#    build:
+#      dockerfile: Dockerfile
+    image: intersystemsdc/iris-community
+    restart: always
+    command: --check-caps false
+    ports:
+      - "9092:52773"
+      - "9091:1972"
+    volumes:
+      - ./iris:/irisrun/repo
+  app:
+    container_name: quiz-app
+    depends_on:
+      - iris
+    image: tomcat:10
+    volumes:
+      - ./target/main_project-1.0-SNAPSHOT.war:/usr/local/tomcat/webapps/ROOT.war
+    ports:
+      - '8080:8080'
