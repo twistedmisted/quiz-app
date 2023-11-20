@@ -36,4 +36,5 @@ Tests can be sort by subject, name, difficulty, number of questions. Each quiz h
 4. Everything done
 
 # Video Demo
-[Watch video](/demo/video_demo.mp4)
+https://github.com/twistedmisted/quiz-app/assets/49749263/dd3e8ace-808f-421d-8ffb-608f254ec909
+
