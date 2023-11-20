@@ -1,7 +1,5 @@
 # GmOwl (Quizzes Web-app)
-This is a web-app in which the User can take quizzes and see the results. The administrator can perform such actions 
-with tests as add new ones, edit existing ones and delete. Administrator also can edit/block/unblock/delete users. 
-Tests can be sort by subject, name, difficulty, number of questions. Each quiz has time to pass.
+GmOwl is an engaging quiz platform catering to both users and administrators. Users can explore timed quizzes across various subjects and difficulty levels. Admins have control over content, managing quizzes and user interactions. Quizzes are conveniently sorted, offering an interactive experience for all quiz enthusiasts.
 # How to install?
     https://github.com/twistedmisted/quiz-app.git
 # How to run app using docker compose?
