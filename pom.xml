@@ -40,6 +40,13 @@
             <scope>quiz</scope>
         </dependency>
 
+
+        <dependency>
+            <groupId>com.intersystems</groupId>
+            <artifactId>intersystems-jdbc</artifactId>
+            <version>3.7.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
@@ -85,6 +92,17 @@
         </dependency>
 
     </dependencies>
+
+    <repositories>
+        <repository>
+            <id>InterSystems IRIS DC Git Repository</id>
+            <url>https://raw.githubusercontent.com/intersystems-community/iris-driver-distribution/main/JDBC/JDK18/</url>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+        </repository>
+    </repositories>
 
     <build>
         <plugins>
