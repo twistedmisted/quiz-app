@@ -8,8 +8,8 @@
             maxTotal="100" maxIdle="30" maxWaitMillis="10000"
 
             driverClassName="com.intersystems.jdbc.IRISDriver"
-            username="_SYSTEM" password="PASSWORD"
-            url="jdbc:IRIS://my-iris:1972/User"
+            username="SQLAdmin" password="TU53P32m#"
+            url="jdbc:IRIS://k8s-c5a7b265-a91460d5-94cb6ab0ee-d1f9165fcda18cd0.elb.us-east-1.amazonaws.com:443/User"
     />
 
 </Context>
