@@ -1,22 +1,7 @@
 version: '3.6'
 services:
-  iris:
-    container_name: my-iris
-    image: intersystemsdc/iris-community
-    restart: always
-    command: --check-caps false
-    ports:
-      - "9092:52773"
-      - "9091:1972"
-    volumes:
-      - ./iris/scripts/init.sql:/docker-entrypoint-initdb.d/init.sql
-    environment:
-      IRIS_USERNAME: _SYSTEM
-      IRIS_PASSWORD: PASSWORD
   app:
     container_name: quiz-app
-    depends_on:
-      - iris
     build:
       context: .
       dockerfile: Dockerfile

@@ -22,6 +22,7 @@ public class DbManager {
         basicDataSource.setMaxActive(Integer.parseInt(resource.getString("db.maxTotal")));
         basicDataSource.setUsername(resource.getString("db.username"));
         basicDataSource.setPassword(resource.getString("db.password"));
+        basicDataSource.setConnectionProperties("connection security level=10;");
     }
 
     public static synchronized DbManager getInstance() {
