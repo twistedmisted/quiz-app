@@ -9,7 +9,7 @@ git clone https://github.com/twistedmisted/quiz-app.git
 # How to run app using docker compose?
 
 ### Pre-requirements
-This version of application uses [Cloud SQL](https://portal.dap.isccloud.io/account/login). So, you need follow these steps to run application successfully (also you can use this [guide](https://community.intersystems.com/post/connecting-cloud-sql-dbeaver-using-ssltls) if something is hard):
+This version of application uses [Cloud SQL](https://portal.dap.isccloud.io/account/login). If you want to run InterSystems IRIS database locally you need to use [this branch](https://github.com/twistedmisted/quiz-app/tree/local-irisdb). So, you need follow these steps to run application successfully (also you can use this [guide](https://community.intersystems.com/post/connecting-cloud-sql-dbeaver-using-ssltls) if something is hard):
 1. You need to register and create InterSystems IRIS Cloud SQL deployment.
 2. Get X.509 certificate.
 3. Create a keystore.jks using this command:
