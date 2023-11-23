@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+    <Document name="java-quiz-app.ZPM">
+        <Module>
+            <Name>java-quiz-app</Name>
+            <Version>1.0.0</Version>
+            <Description>GmOwl: Timed quizzes, diverse content. Admin control. </Description>
+            <Author>
+                <Person>Andrii Mishchenko</Person>
+                <CopyrightDate>2023</CopyrightDate>
+                <License>MIT</License>
+            </Author>
+            <Packaging>module</Packaging>
+            <SourcesRoot>src</SourcesRoot>
+            <AfterInstallMessage>See more about on https://github.com/twistedmisted/quiz-app</AfterInstallMessage>
+        </Module>
+    </Document>
+</Export>
+
