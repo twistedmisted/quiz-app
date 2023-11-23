@@ -134,18 +134,18 @@
         <c:if test="${quizzes.size() == 0}">
             <p style="font-size: 25px; color: gray; font-style: italic;"><fmt:message key="zero-quizzes"/></p>
         </c:if>
-        <div class="col-md-3 mb-3">
-            <c:forEach var="quiz" items="${quizzes}">
-                <a class="quiz-block d-block" style="text-decoration: none"
-                   href="${pageContext.request.contextPath}/app/quiz?id=${quiz.getId()}">
-                    <div>
-                        <h4><c:out value="${quiz.getName()}"/></h4>
-                        <p>Difficulty: <c:out value="${quiz.getDifficulty()}"/></p>
-                        <p>Duration: ${quiz.getDuration()} <fmt:message key="time.min"/></p>
-                    </div>
-                </a>
-            </c:forEach>
-        </div>
+        <c:forEach var="quiz" items="${quizzes}">
+            <div class="col-md-3 mb-3">
+                    <a class="quiz-block d-block" style="text-decoration: none"
+                       href="${pageContext.request.contextPath}/app/quiz?id=${quiz.getId()}">
+                        <div>
+                            <h4><c:out value="${quiz.getName()}"/></h4>
+                            <p>Difficulty: <c:out value="${quiz.getDifficulty()}"/></p>
+                            <p>Duration: ${quiz.getDuration()} <fmt:message key="time.min"/></p>
+                        </div>
+                    </a>
+            </div>
+        </c:forEach>
     </div>
     </fmt:bundle>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -73,7 +73,7 @@
                     <div class="input-group mt-2" id="answer_b_group">
                         <div class="input-group-prepend">
                             <div class="input-group-text">
-                                <input type="checkbox" id="b" name="a" aria-label="Checkbox for answer">
+                                <input type="checkbox" id="b" name="b" aria-label="Checkbox for answer">
                             </div>
                         </div>
                         <input type="text" class="form-control" id="b-input" name="b-input" required>

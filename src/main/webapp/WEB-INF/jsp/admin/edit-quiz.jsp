@@ -10,7 +10,7 @@
     </head>
     <body>
     <div class="container mt-5">
-        <h2>Edit User</h2>
+        <h2><fmt:message key="edit-quiz"/></h2>
         <c:if test="${param.error == 'true'}">
             <p class="incr"><fmt:message key="error.validation.quiz"/></p>
         </c:if>
