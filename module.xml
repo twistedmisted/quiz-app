@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-    <Document name="java-quiz-app.ZPM">
+    <Document name="quiz-app.ZPM">
         <Module>
-            <Name>java-quiz-app</Name>
+            <Name>quiz-app</Name>
             <Version>1.0.0</Version>
             <Description>GmOwl: Timed quizzes, diverse content. Admin control. </Description>
             <Author>
