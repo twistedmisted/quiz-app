@@ -29,6 +29,10 @@ This version of application uses [Cloud SQL](https://portal.dap.isccloud.io/acco
 3. Open http://localhost:8080/
 4. Everything done
 
+# ChatGPT Usage Demo
+![chatgpt-example](https://github.com/twistedmisted/quiz-app/assets/49749263/5ecdcf02-35c8-46e4-bb8b-4b2a0e98b429)
+
+
 # Video Demo
 https://github.com/twistedmisted/quiz-app/assets/49749263/dd3e8ace-808f-421d-8ffb-608f254ec909
 
