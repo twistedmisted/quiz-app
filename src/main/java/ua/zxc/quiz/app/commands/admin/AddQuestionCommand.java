@@ -13,6 +13,7 @@ import ua.zxc.quiz.dao.entity.QuestionDAO;
 import ua.zxc.quiz.dao.entity.QuizDAO;
 import ua.zxc.quiz.dao.entity.VariantsDAO;
 import ua.zxc.quiz.dao.model.Question;
+import ua.zxc.quiz.dao.model.Quiz;
 import ua.zxc.quiz.exception.DbException;
 
 import java.io.IOException;
@@ -81,8 +82,10 @@ public class AddQuestionCommand implements Command {
                 .build();
         String prompt;
         try {
-            String quizName = quizDAO.get(Long.parseLong(request.getParameter("id"))).getName();
-            prompt = "Generate question on the topic '" + quizName + "'. With this template: Question. a answer: b answer: c answer: d answer: Correct answer: *letter of correct answer*";
+            Quiz quiz = quizDAO.get(Long.parseLong(request.getParameter("id")));
+            String quizName = quiz.getName();
+            String difficulty = quiz.getDifficulty();
+            prompt = "Generate question on the topic '" + quizName + "' by difficulty '" + difficulty + "'. With this template: Question. a answer: b answer: c answer: d answer: Correct answer: *letter of correct answer*";
         } catch (DbException e) {
             throw new RuntimeException(e);
         }
