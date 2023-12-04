@@ -3,7 +3,7 @@
     <Document name="quiz-app.ZPM">
         <Module>
             <Name>quiz-app</Name>
-            <Version>1.0.0</Version>
+            <Version>1.0.2</Version>
             <Description>GmOwl: Timed quizzes, diverse content. Admin control. </Description>
             <Author>
                 <Person>Andrii Mishchenko</Person>
